@@ -94,6 +94,26 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
+}
+header a,i{
+    text-decoration: none;
+    color: rgb(225, 239, 230);
+}
+.headerbox{
+    background-color: rgb(0, 4, 17, .8);
+}
+.link{
+    font-size: 2rem;
+    display: flexbox;
+    justify-content: space-evenly;
+}
+.link a{
+    padding: 0 5%;
+}
+.headerSMIconsArr i{
+    font-size: 2rem;
+    padding: 2%;
 }
 
 /* spacer */
@@ -118,14 +138,76 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: rgb(225, 239, 230);
 }
+h2{
+    text-align: center;
+}
+.menu-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.menu-section{
+    width: 35%;
+    padding: 5%;
 
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+.menuRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.desserts{
+    align-content: center;
+}
 /* footer section */
 footer {
     width: 100%;
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+    color: rgb(225, 239, 230);
+}
+footer p{
+    background-color: rgb(0, 4, 17);
+    color: rgb(225, 239, 230);
+}
+footer nav{
+    background-color: rgb(0, 4, 17);
+    color: rgb(225, 239, 230);
+}
+.emailSignUp{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(225, 239, 230);
+}
+footer link a {
+    padding: 10% 0 ;
+    align-content: center;
+}
+footer p{
+    text-align: right;
+    padding-right: 5%;
+    font-size: 1rem;
 }
 
 /* mobile media query */
