@@ -246,18 +246,23 @@ footer nav{
 }
 .emailSignUp{
     width: 15%;
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: space-between;
 }
-footer nav link{
-    display: flexbox;
+.link{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 footer a{
     text-decoration: none;
     color: rgb(225, 239, 230);
+}
+footer link a {
+    padding: 10% 0 ;
+    align-content: center;
 }
 footer p{
     text-align: right;
@@ -267,7 +272,11 @@ footer p{
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    .link{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
 
     /* gallery section */
     .gallery {
@@ -275,7 +284,11 @@ footer p{
     }
     
     /* about us section */
-
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .about {
         height: 200vh;
     }
@@ -317,5 +330,20 @@ footer p{
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+    }
+    footer nav{
+        text-align: center;
+    }
+    .emailSignUp{
+        align-content: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        padding-left: 10%;
+    }
+    footer p{
+        text-align: center;
     }
 }
